@@ -1,31 +1,70 @@
 .friendMessage {
-
-}
-
-.friendImageAndText {
-
-}
-
-.friendImageAndText img {
-
-}
-
-.friendText {
-
-}
-
-.friendText:after {
-
-}
-
-.friendName {
-
-}
-
-.friendMessageText {
-
-}
-
-.friendTime {
-
-}
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .friendImageAndText {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .friendImageAndText img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Контейнер с текстом */
+  .friendText {
+    background-color: #f5f7fb;
+    border-radius: 10px;
+    padding: 12px 16px;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .friendText:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -10px; /* Смещение для крючка */
+    border: 8px solid transparent;
+    border-right-color: #f5f7fb;
+  }
+  
+  /* Имя отправителя */
+  .friendName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #000;
+  }
+  
+  /* Текст сообщения */
+  .friendMessageText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    white-space: pre-wrap; /* Чтобы текст правильно переносился */
+  }
+  
+  /* Время сообщения */
+  .friendTime {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #888;
+    margin-top: 4px;
+    align-self: flex-end;
+    position: absolute;
+    //right: 0;
+  }

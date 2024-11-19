@@ -1,17 +1,23 @@
 .message {
-
+    display: flex;
+    align-items: flex-start;
 }
 
 .imageAndText {
-
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .text {
-
+    background-color: #0066CC;
 }
 
 .text:after {
