@@ -1,35 +1,80 @@
 .greetingForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 7px;
+    padding: 25px;
 }
 
 .inputAndButtonContainer {
-}
-
-.error {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* расстояние между инпутом и кнопкой */
 }
 
 .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* светлый бордер */
+    border-radius: 5px; /* скругленные углы */
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
 .input:focus {
+    border-color: #4b8dff; /* синий бордер при фокусе */
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .errorInput {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px; /* скругленные углы */
+    outline: none;
+    transition: border-color 0.3s ease;
+    border: 1px solid red; /* красная граница, если ошибка */
 }
 
 .button {
+    padding: 10px 15px;
+    background-color: #4b8dff; /* синий фон */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .button:focus {
+    outline: none;
+    background-color: #366ac4; /* темнее синий при фокусе */
 }
 
 .button:active {
+    background-color: #2a528e; /* еще темнее синий при нажатии */
 }
 
 .button:disabled {
+    cursor: not-allowed; /* курсор в виде запрещающего знака */
 }
 
 .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный цвет */
+    margin-top: 10px;
 }
 
 .greeting {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
